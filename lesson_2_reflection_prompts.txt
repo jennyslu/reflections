@@ -33,5 +33,17 @@ How do the diagrams help you visualize the branch structure?
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	The tip of the master branch has both coin feature as well as colour feature (although the
+	coins themselves are not coloured). Git log now shows the commits from both branches ordered
+	by time stamp. Use git show to compare commit to its parent since it will be hard to tell
+	from git log as both branch's commits are now intermingled. 
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	Automatic merges are more convenient and you don't need to go through the hassle of checking
+	the differences between code in each branch. However, there are times where the choice of
+	which line to keep in the final tip is ambiguous. In this cases, trusting Git
+	to make the right choice is risky even though you can go back to the two parent commits
+	to restore any lost functionality. It would be better to just circumvent this
+	and spend a little extra time resolving the Git conflict manually though. 
