@@ -1,0 +1,68 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    If I make a change to my file and then it stops working but it 
+    previously working, then it follows that whatever I changed must be
+    causing the error. Viewing the differences between the old and new files
+    would help me pinpoint where the bug is.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Seeing what other people have done in their revisions would be helpful for me
+    because I could emulate something someone else did. There are many ways to 
+    achieve the same end result so without past history of a file I would never 
+    know what the various attempts at solving the problem were. Also, it would 
+    be useful to observe someone else's thought process. Seeing various versions of
+    another person's work would give insight into how they approached the problem.
+    I could apply all of these concepts to myself, as well, and observe myself
+    as thought I were a third party. 
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros:
+        -have total control and as the crator you are best able to determine
+        when a logical change that is a good commit size has been made
+    Cons:
+        -could forget to save
+        -unforeseen error during what you think will be one commmit destroys your
+        work and you lose the portion of the work that wasn't bad
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    A Google Doc file is a standalone file and can be viewed - without issue - on
+    its own. Even if the file is a part of a larger series of files (eg. a very 
+    large document comprised of many docs), those other files are not essential to
+    opening or "running" one file. 
+    Code, on the other hand, can be in multiple files but all required for one program/
+    webpage/etc. Even if one file can be opened and read, the whole program/function/
+    whatever won't work unless all files work. Some projects necessitate separate files
+    (eg. HTML and CSS files for webpages), while others are forced by scale (eg. multiple
+    Java or Python files). Either way, saving all the files in one commit (even if no 
+    changes are made to some of the files) is important because it's the version of the
+    entire PROJECT we want to keep track of - not just a single file. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+    1. Use git log (which comes up in less?) and scroll to find the commit you are 
+    interested in.
+    2. Press Q to exit git log (which will cause the log to remain at the location
+    where you found the commits of interest)
+    3. Use git diff and copy and past IDs from git log above
+    4. Compare results in git diff (which also comes up in less?)
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    1. Use git log to find commit where you know it was working
+    2. Use git checkout to go through the commits systematically until you find the
+    one that has the bug introduced
+    3. Fix that bug in the current version! I won't have to go all the way back 
+    in progress to fix a bug that could have been introduced in the process.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I'm going to make a data visualization for healthcare spending in Canada
