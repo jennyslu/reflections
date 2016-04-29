@@ -15,8 +15,16 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	Even if you make changes to several different files in the repository at once,
+	you can use the staging area to only commit the changes to one file at a time. 
+	It's also a good way to check your changes. 
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+
+	If I already have a working copy of my visualization but I want to add more to it
+	using a branch is helpful because I could still show and submit the master
+	branch that does work, while still working on the experimental branch.
 
 How do the diagrams help you visualize the branch structure?
 
