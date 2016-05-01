@@ -39,4 +39,16 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    You just saw that the workflow when making changes in a separate branch is more complicated
+    than working directly in master, especially when you need to stay up-to-date with changes
+    others are making. Rather than simply pulling and pushing, you need to pull changes into
+    your local master branch, merge the local master into your branch (different-oil, in our
+    case), then push your branch to the remote before finally merging your branch into master,
+    either locally or on GitHub.
+
+    Working directly on the master branch is obviously less time consuming and maybe a good
+    idea for simple things like bug fixes or updates to documentation. 
+
+    However, working on something new that could break the master would probably be better
+    in a branch. I think it's also better to work in a branch if you want feedback on your 
+    changes before they are merged into the master. 
